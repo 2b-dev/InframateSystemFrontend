@@ -24,11 +24,17 @@
 }
 .widget-content .widget-content-left .widget-heading {
   color: #ffffff;
+  opacity: 1;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .app-theme-white.fixed-header .app-header__logo,
 .app-sidebar .app-sidebar__inner,
-.scrollbar-sidebar.ps {
+.scrollbar-sidebar.ps,
+.app-sidebar .scrollbar-sidebar,
+.app-theme-white .app-footer .app-footer__inner,
+.app-theme-white .app-header {
   background-color: #002046;
 }
 
@@ -46,11 +52,18 @@
 .vertical-nav-menu {
   margin-top: 1.5rem;
 }
+.closed-sidebar .app-sidebar .app-sidebar__inner ul.vertical-nav-menu > li > a {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 50px;
+}
+.vertical-nav-menu ul:before {
+  width: 0;
+}
 .vertical-nav-menu > li > a {
   color: #ffffff;
   font-weight: 500;
   font-size: 24px;
-  font-weight: bold;
   display: block;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -58,17 +71,44 @@
   line-height: 24px;
   padding-left: 50px;
 }
-.vertical-nav-menu > li > a:hover, .vertical-nav-menu > li > a.active {
+.vertical-nav-menu > li ul li a,
+.vertical-nav-menu > li ul li a.mm-active,
+.vertical-nav-menu > li ul li a:hover {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 24px;
+  display: block;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  height: auto;
+  line-height: 24px;
+  padding-left: 50px;
+  border-radius: 0;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.vertical-nav-menu > li ul li a.mm-active,
+.vertical-nav-menu > li ul li a:hover {
+  background-color: #3a76ad;
+}
+.vertical-nav-menu li.mm-active > a {
+  font-weight: 500;
+}
+.vertical-nav-menu > li > a:hover,
+.vertical-nav-menu > li > a.active,
+.vertical-nav-menu li.mm-active > a {
   color: #002046;
   background-color: #ffffff;
   border-radius: 0;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
+  font-weight: bold;
 }
 .vertical-nav-menu ul > li > a {
   color: #ffffff;
 }
-.vertical-nav-menu a .icon_infra {
+.vertical-nav-menu a .icon_infra,
+.vertical-nav-menu > li ul li a .icon_infra {
   text-align: center;
   width: 30px;
   height: 30px;
@@ -88,6 +128,104 @@
   background-image: url("../images/icons/side_menu/dashboard.png");
 }
 
-.vertical-nav-menu > li > a:hover .icon_infra.i_dashboard, .vertical-nav-menu > li > a.active .icon_infra.i_dashboard {
+.vertical-nav-menu > li > a:hover .icon_infra.i_dashboard,
+.vertical-nav-menu > li > a.active .icon_infra.i_dashboard,
+.vertical-nav-menu li.mm-active > a .icon_infra.i_dashboard {
   background-image: url("../images/icons/side_menu/dashboard_active.png");
+}
+
+.vertical-nav-menu > li > a .icon_infra.i_devices {
+  background-image: url("../images/icons/side_menu/devices.png");
+}
+
+.vertical-nav-menu > li > a:hover .icon_infra.i_devices,
+.vertical-nav-menu > li > a.active .icon_infra.i_devices,
+.vertical-nav-menu li.mm-active > a .icon_infra.i_devices {
+  background-image: url("../images/icons/side_menu/devices_active.png");
+}
+.vertical-nav-menu > li > a .icon_infra.i_configuration {
+  background-image: url("../images/icons/side_menu/configuration.png");
+}
+
+.vertical-nav-menu > li > a:hover .icon_infra.i_configuration,
+.vertical-nav-menu > li > a.active .icon_infra.i_configuration,
+.vertical-nav-menu li.mm-active > a .icon_infra.i_configuration {
+  background-image: url("../images/icons/side_menu/configuration_active.png");
+}
+.vertical-nav-menu > li > a .icon_infra.i_setup {
+  background-image: url("../images/icons/side_menu/setup.png");
+}
+
+.vertical-nav-menu > li > a:hover .icon_infra.i_setup,
+.vertical-nav-menu > li > a.active .icon_infra.i_setup,
+.vertical-nav-menu li.mm-active > a .icon_infra.i_setup {
+  background-image: url("../images/icons/side_menu/setup_active.png");
+}
+
+.vertical-nav-menu > li ul li a .icon_infra.i_template {
+  background-image: url("../images/icons/side_menu/template.png");
+}
+.vertical-nav-menu > li ul li a .icon_infra.i_deploy {
+  background-image: url("../images/icons/side_menu/deploy.png");
+}
+.vertical-nav-menu > li ul li a .icon_infra.i_jobs {
+  background-image: url("../images/icons/side_menu/jobs.png");
+}
+.btn-logout {
+  background-color: #001023;
+  padding-top: 1.2rem;
+  padding-bottom: 0.8rem;
+  position: absolute;
+  bottom: 0;
+  height: 65px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.btn-logout span {
+  font-size: 24px;
+  margin-left: 0.5rem;
+  color: #ffffff;
+}
+.btn-logout img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 0.5rem;
+}
+.closed-sidebar .app-sidebar .btn-logout span {
+  display: none;
+}
+.closed-sidebar .app-sidebar:hover .btn-logout {
+  bottom: 60px;
+}
+.closed-sidebar .app-sidebar:hover .btn-logout span {
+  display: block;
+}
+@media only screen and (max-width: 1320px) {
+  .header-user-info {
+    display: block;
+  }
+}
+@media (max-width: 991.98px) {
+  .app-header .app-header__logo {
+    display: block;
+  }
+  .app-header .app-header__logo .logo-src {
+    margin: 0 auto;
+  }
+  .app-header .app-header__logo .header__pane {
+    display: none;
+  }
+  .sidebar-mobile-open .app-sidebar .app-sidebar__inner ul li a {
+    padding: 1rem;
+    padding-left: 50px;
+  }
+  .sidebar-mobile-open .app-sidebar .app-sidebar__inner ul.mm-show > li > a {
+    height: 56px;
+    padding: 1rem;
+    padding-left: 50px;
+    line-height: 24px;
+  }
 }
