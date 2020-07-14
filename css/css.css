@@ -478,7 +478,7 @@
   justify-content: center;
   align-items: center;
 }
-.btn-save-as-new-template{
+.btn-save-as-new-template {
   color: #ffffff;
   background-color: #002046;
   border-radius: 10px;
@@ -544,9 +544,85 @@
 .form-control {
   font-size: 18px;
 }
-.txtTitleDeployFrm{
+.txtTitleDeployFrm {
   font-size: 20px;
-  color: #001023;
+  color: #002046;
+  font-weight: bold;
+}
+.forms-wizard li em {
+  width: 74px;
+  height: 74px;
+  line-height: 74px;
+  background-color: transparent;
+  font-size: 35px;
+  color: #bababa;
+  border: 3px solid #bababa;
+}
+.forms-wizard li.active em {
+  background-color: transparent;
+  color: #002046;
+  border: 3px solid #002046;
+}
+.forms-wizard li span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #bababa;
+}
+.forms-wizard li.active span,
+.forms-wizard li.done span {
+  color: #002046;
+}
+.forms-wizard li::after,
+.forms-wizard li.done::after {
+  width: 34px;
+  height: 34px;
+  left: calc(100% - 17px);
+  background-color: transparent;
+  margin-top: -35px;
+}
+.forms-wizard li::after {
+  background-color: transparent;
+  background-image: url("../images/icons/action_deploy/arrow-right-unactive.png");
+}
+.forms-wizard li.active::after,
+.forms-wizard li.done::after {
+  background-color: transparent;
+  background-image: url("../images/icons/action_deploy/arrow-right-active.png");
+}
+.forms-wizard li:last-of-type::after {
+  display: none;
+}
+.forms-wizard li::before {
+  height: 0;
+  width: 0;
+}
+.forms-wizard li.done em {
+  color: #ffffff;
+  border: 3px solid #002046;
+  background-color: #002046;
+}
+.forms-wizard li.done em::before {
+  width: 68px;
+  height: 68px;
+  line-height: 68px;
+  background-color: #002046;
+  content: "";
+  background-image: url("../images/icons/action_deploy/pass.png");
+  background-repeat: no-repeat;
+  background-size: 40% auto;
+  background-position: center center;
+}
+.bg-f3f3f3 {
+  background-color: #f3f3f3;
+}
+.txtCardDeploy {
+  font-size: 20px;
+  color: #002046;
+  margin-bottom: 0;
+}
+.ulDetailCardDeploy {
+  font-size: 20px;
+  color: #002046;
   font-weight: bold;
 }
 @media only screen and (max-width: 1320px) {
