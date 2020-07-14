@@ -203,6 +203,65 @@
 .closed-sidebar .app-sidebar:hover .btn-logout span {
   display: block;
 }
+.custom-select-year {
+  width: 100%;
+  max-width: 201px;
+  font-size: 25px;
+  height: 45px;
+  background-color: #ffffff;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  background-image: url("../images/icons/input/arrowSelect.png");
+  background-repeat: no-repeat;
+  background-position: center right 1rem;
+  background-size: 14px auto;
+  color: #bababa;
+}
+.table.table-infra {
+  background: #ffffff;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.table.table-infra thead tr th {
+  background-color: #002046;
+  font-size: 22px;
+  color: #ffffff;
+  font-weight: 400;
+  border: none;
+  border-bottom: none;
+}
+.table.table-infra tbody tr:nth-child(odd) td {
+  font-size: 22px;
+  color: #3a76ad;
+  font-weight: 400;
+  border: none;
+  border-bottom: none;
+}
+.table.table-infra tbody tr:nth-child(even) td {
+  font-size: 22px;
+  color: #3aa8d8;
+  font-weight: 400;
+  border: none;
+  border-bottom: none;
+}
+.table.table-infra tbody tr td:first-of-type {
+  padding-left: 1.5rem;
+}
+.table.table-infra tbody tr td:last-of-type {
+    padding-right: 1.5rem;
+  }
+.table.table-infra thead tr th:first-of-type {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  padding-left: 1.5rem;
+}
+.table.table-infra thead tr th:last-of-type {
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  padding-right: 1.5rem;
+}
+
 @media only screen and (max-width: 1320px) {
   .header-user-info {
     display: block;
