@@ -73,7 +73,8 @@
 }
 .vertical-nav-menu > li ul li a,
 .vertical-nav-menu > li ul li a.mm-active,
-.vertical-nav-menu > li ul li a:hover {
+.vertical-nav-menu > li ul li a:hover,
+.closed-sidebar .app-sidebar:hover .app-sidebar__inner ul.mm-show > li > a {
   color: #ffffff;
   font-weight: 500;
   font-size: 24px;
@@ -207,6 +208,12 @@
   bottom: 60px;
 }
 .closed-sidebar .app-sidebar:hover .btn-logout span {
+  display: block;
+}
+.closed-sidebar .app-sidebar .app-sidebar__inner ul.mm-show {
+  display: none;
+}
+.closed-sidebar .app-sidebar:hover .app-sidebar__inner ul.mm-show {
   display: block;
 }
 .custom-select-year {
@@ -432,7 +439,88 @@
   height: 30px;
 }
 .c-3a76ad {
+  color: #3a76ad !important;
+}
+.c-2f435a {
+  color: #2f435a !important;
+}
+
+.btn-save,
+.btn-history {
+  color: #ffffff;
+  background-color: #bababa;
+  border-radius: 10px;
+  font-size: 20px;
+  min-width: 130px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.btn-save-as-new-template {
+  color: #ffffff;
+  background-color: #002046;
+  border-radius: 10px;
+  font-size: 20px;
+  min-width: 130px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.btn-cancel {
+  color: #ffffff;
+  background-color: #e36262;
+  border-radius: 10px;
+  font-size: 20px;
+  min-width: 130px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.btn-deploy {
+  color: #ffffff;
+  background-color: #53ccfd;
+  border-radius: 10px;
+  font-size: 20px;
+  min-width: 130px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.accordion.accordion-infra .card {
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+.accordion.accordion-infra .card:not(:first-of-type):not(:last-of-type) {
+  border-radius: 1rem;
+}
+.accordion.accordion-infra .card .card-header h2 .btn-link {
+  font-size: 22px;
   color: #3a76ad;
+  background-image: url("../images/icons/arrow_right_accordian.png");
+  background-position: center left;
+  background-repeat: no-repeat;
+  padding-left: 1.2rem;
+  font-weight: 700;
+}
+.accordion.accordion-infra .card .card-header h2 .btn-link.collapsed {
+  background-image: url("../images/icons/arrow_down_accordian.png");
+}
+.col-form-label {
+  font-size: 18px;
+  color: #2f435a;
+  font-weight: 700;
+}
+.col-form-label span {
+  color: #e36262;
+}
+.title-section-form {
+  margin-bottom: 0;
+  color: #2f435a;
+  font-size: 22px;
+  font-weight: bold;
+}
+.form-control{
+  font-size: 18px;
 }
 @media only screen and (max-width: 1320px) {
   .header-user-info {
@@ -458,5 +546,35 @@
     padding: 1rem;
     padding-left: 50px;
     line-height: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .btn-save,
+  .btn-history {
+    font-size: 16px;
+    min-width: 80px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .btn-save-as-new-template {
+    font-size: 16px;
+    min-width: 80px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .btn-cancel {
+    font-size: 16px;
+    min-width: 80px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .btn-deploy {
+    font-size: 16px;
+    min-width: 80px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-bottom: 0.5rem;
   }
 }
