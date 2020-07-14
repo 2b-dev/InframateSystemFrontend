@@ -180,78 +180,63 @@
                 <div class="app-main__inner">
                     <div class="row">
                         <div class="col-12 mb-3">
-                            <a href="deploy_frm.html" class="btn btn-outline-action"><img
-                                    src="./images/icons/action_deploy/plus.png"></a>
-                            <button class="btn btn-outline-action"><img
-                                    src="./images/icons/action_deploy/play.png"></button>
-                            <button class="btn btn-outline-action"><img
-                                    src="./images/icons/action_deploy/edit.png"></button>
-                            <button class="btn btn-import">Import</button>
+                            <p class="txtTitleDeployFrm">Config Job Wizard/FIP SNOOPING Template</p>
                         </div>
                         <div class="col-12 mb-1">
-                            <div class="table-responsive">
-                                <table class="table table-devices table-borderless table-striped">
-                                    <thead>
-                                        <tr>
-                                            <th>
+                            <div id="smartwizard">
+                                <ul class="forms-wizard">
+                                    <li>
+                                        <a href="#step-1">
+                                            <em>1</em><span>Welcome</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#step-2">
+                                            <em>2</em><span>Select Devices</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#step-3">
+                                            <em>3</em><span>Define Veriables</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#step-4">
+                                            <em>4</em><span>Preview Config</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#step-5">
+                                            <em>5</em><span>Schedule Job</span>
+                                        </a>
+                                    </li>
+                                </ul>
 
-                                            </th>
-                                            <th>Name</th>
-                                            <th>Description</th>
-                                            <th>Suported Platfroms</th>
-                                            <th>Tage</th>
-                                            <th>Template Tage</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="custom-checkbox custom-control"><input type="checkbox"
-                                                        id="table_check_row_1" class="custom-control-input"><label
-                                                        class="custom-control-label" for="table_check_row_1"></label>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                Add_Fex
-                                            </td>
-                                            <td></td>
-                                            <td>AI</td>
-                                            <td></td>
-                                            <td>Policy</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="custom-checkbox custom-control"><input type="checkbox"
-                                                        id="table_check_row_2" class="custom-control-input"><label
-                                                        class="custom-control-label" for="table_check_row_2"></label>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                Default_Network
-                                            </td>
-                                            <td>Default Network Template</td>
-                                            <td>AI</td>
-                                            <td>Network</td>
-                                            <td>Profile</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="custom-checkbox custom-control"><input type="checkbox"
-                                                        id="table_check_row_3" class="custom-control-input"><label
-                                                        class="custom-control-label" for="table_check_row_3"></label>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                FIP SNOOPING Template
-                                            </td>
-                                            <td>This file specifles the template comfiguration for FIP Snooping</td>
-                                            <td>AI</td>
-                                            <td>Vrf</td>
-                                            <td>CLI</td>
-                                        </tr>
-
-                                    </tbody>
-                                </table>
+                                <div class="form-wizard-content">
+                                    <div id="step-1">
+                                    </div>
+                                    <div id="step-2">
+                                        
+                                    </div>
+                                    <div id="step-3">
+                                        
+                                    </div>
+                                    <div id="step-4">
+                                        
+                                    </div>
+                                    <div id="step-5">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="clearfix">
+                                <button type="button" id="reset-btn"
+                                    class="btn-shadow float-left btn btn-link">Reset</button>
+                                <button type="button" id="next-btn"
+                                    class="btn-shadow btn-wide float-right btn-pill btn-hover-shine btn btn-primary">Next</button>
+                                <button type="button" id="prev-btn"
+                                    class="btn-shadow float-right btn-wide btn-pill mr-3 btn btn-outline-secondary">Previous</button>
                             </div>
                         </div>
 
@@ -262,9 +247,9 @@
     </div>
     <div class="app-drawer-overlay d-none animated fadeIn"></div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"
-        crossorigin="anonymous"></script>
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/metismenu"></script>
     <script src="./assets/js/scripts-init/app.js"></script>
     <script src="./assets/js/scripts-init/demo.js"></script>

@@ -544,6 +544,11 @@
 .form-control {
   font-size: 18px;
 }
+.txtTitleDeployFrm{
+  font-size: 20px;
+  color: #001023;
+  font-weight: bold;
+}
 @media only screen and (max-width: 1320px) {
   .header-user-info {
     display: block;
