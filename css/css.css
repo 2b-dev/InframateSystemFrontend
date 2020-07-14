@@ -456,7 +456,29 @@
   padding-right: 1.5rem;
   margin-bottom: 0.5rem;
 }
-.btn-save-as-new-template {
+.btn-outline-action {
+  background-color: #ffffff;
+  border: 1.5px solid #002046;
+  min-width: 55px;
+  height: 36px;
+}
+.btn-import {
+  color: #ffffff;
+  background-color: #002046;
+  border-radius: 5px;
+  font-size: 20px;
+  min-width: 130px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  height: 36px;
+  margin-bottom: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-save-as-new-template{
   color: #ffffff;
   background-color: #002046;
   border-radius: 10px;
@@ -519,7 +541,7 @@
   font-size: 22px;
   font-weight: bold;
 }
-.form-control{
+.form-control {
   font-size: 18px;
 }
 @media only screen and (max-width: 1320px) {
