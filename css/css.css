@@ -171,6 +171,12 @@
 .vertical-nav-menu > li ul li a .icon_infra.i_jobs {
   background-image: url("../images/icons/side_menu/jobs.png");
 }
+.vertical-nav-menu > li ul li a .icon_infra.i_roles {
+    background-image: url("../images/icons/side_menu/roles.png");
+  }
+  .vertical-nav-menu > li ul li a .icon_infra.i_staff {
+    background-image: url("../images/icons/side_menu/staff.png");
+  }
 .btn-logout {
   background-color: #001023;
   padding-top: 1.2rem;
