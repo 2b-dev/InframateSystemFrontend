@@ -715,6 +715,27 @@
   background-color: #e36262;
   min-width: 120px;
 }
+.txtTitleModal {
+  font-size: 30px;
+  color: #000000;
+  font-weight: bold;
+}
+.btn_closeModal {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.btn_closeModal img {
+  width: 30px;
+  height: 30px;
+}
+.txtStatusJobs {
+  margin-bottom: 0;
+  font-size: 20px;
+}
+.c-6fb683 {
+  color: #6fb683!important;
+}
 @media only screen and (max-width: 1320px) {
   .header-user-info {
     display: block;
