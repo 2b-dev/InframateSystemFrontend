@@ -734,7 +734,75 @@
   font-size: 20px;
 }
 .c-6fb683 {
-  color: #6fb683!important;
+  color: #6fb683 !important;
+}
+.pageLogin {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+.pageLogin .pageLoginLeft {
+  background-image: url("../images/backgrounds/login.png");
+  width: 50%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pageLogin .pageLoginRight {
+  background-color: #ffffff;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.pageLogin .pageLoginRight .divFrmLogin {
+  width: 50%;
+  text-align: center;
+}
+.txtTitleLogin {
+  font-size: 40px;
+  color: #002046;
+  margin-bottom: 3rem;
+  font-weight: bold;
+}
+.inputLogin {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  background-color: #f3f3f3;
+  border: none;
+  border-left: 4px solid #2a5ba4;
+  border-radius: 0;
+  font-size: 24px;
+}
+.txtInfraBrand {
+  font-size: 70px;
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.btn-login {
+  width: 100%;
+  background-color: #002046;
+  color: #ffffff;
+  font-size: 24px;
+  border-radius: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+.txtForgotPassword {
+  font-size: 20px;
+  font-weight: bold;
+  color: #bababa;
+}
+.txtForgotPassword a {
+  color: #303278;
 }
 @media only screen and (max-width: 1320px) {
   .header-user-info {
@@ -774,6 +842,33 @@
   }
   .btn_add_Right {
     background-image: url("../images/icons/action_deploy/add_left_up.png");
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .pageLogin {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+  }
+  .pageLogin .pageLoginLeft {
+    width: 30%;
+  }
+  .pageLogin .pageLoginRight {
+    background-color: #ffffff;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .pageLogin .pageLoginRight .divFrmLogin {
+    width: 50%;
+    text-align: center;
+  }
+  .txtInfraBrand {
+    font-size: 30px;
   }
 }
 @media (max-width: 767px) {
@@ -817,5 +912,30 @@
   .forms-wizard li.done em::before {
     width: 44px;
     height: 44px;
+  }
+  .pageLogin {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+  }
+  .pageLogin .pageLoginLeft {
+    display: none;
+  }
+  .pageLogin .pageLoginRight {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .pageLogin .pageLoginRight .divFrmLogin {
+    width: 70%;
+    text-align: center;
+  }
+  .txtInfraBrand {
+    font-size: 30px;
   }
 }
