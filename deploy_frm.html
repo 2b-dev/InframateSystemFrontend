@@ -187,27 +187,32 @@
                                 <ul class="forms-wizard">
                                     <li>
                                         <a href="#step-1">
-                                            <em>1</em><span>Welcome</span>
+                                            <em>1</em>
+                                            <p>Welcome</p>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#step-2">
-                                            <em>2</em><span>Select Devices</span>
+                                            <em>2</em>
+                                            <p>Select Devices</p>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#step-3">
-                                            <em>3</em><span>Define Veriables</span>
+                                            <em>3</em>
+                                            <p>Define Veriables</p>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#step-4">
-                                            <em>4</em><span>Preview Config</span>
+                                            <em>4</em>
+                                            <p>Preview Config</p>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#step-5">
-                                            <em>5</em><span>Schedule Job</span>
+                                            <em>5</em>
+                                            <p>Schedule Job</p>
                                         </a>
                                     </li>
                                 </ul>
@@ -242,30 +247,464 @@
                                     <div id="step-2">
                                         <div class="card card-infra bg-f3f3f3">
                                             <div class="card-body pt-4 pb-5">
-                                                <p class="txtCardDeploy">This wizard will help you to apply specific
-                                                    configuration snippets
-                                                    from a configuration template to devices.</p>
-                                                
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="position-relative row form-group">
+                                                            <label for="ip_DeviceScope"
+                                                                class="col-12 col-md-3 col-lg-3 col-xl-2 col-form-label text-left">Device
+                                                                Scope
+                                                            </label>
+                                                            <div class="col-12 col-md-5 col-lg-5 col-xl-3">
+                                                                <select name="ip_DeviceScope" id="ip_DeviceScope"
+                                                                    class="form-control">
+                                                                    <option>Data Center</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="row justify-content-center">
+                                                            <div class="col-12 col-md-12 col-lg-5 mb-3">
+                                                                <div class="table-responsive">
+                                                                    <table
+                                                                        class="table table-devices table-borderless table-striped">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>
+                                                                                    <div
+                                                                                        class="custom-checkbox custom-control">
+                                                                                        <input type="checkbox"
+                                                                                            id="table_checkall"
+                                                                                            class="custom-control-input"><label
+                                                                                            class="custom-control-label"
+                                                                                            for="table_checkall"></label>
+                                                                                    </div>
+                                                                                </th>
+                                                                                <th>Name</th>
+                                                                                <th>IP Address</th>
+                                                                                <th>Group</th>
+                                                                                <th>Platform</th>
+                                                                                <th>Version</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <div
+                                                                                        class="custom-checkbox custom-control">
+                                                                                        <input type="checkbox"
+                                                                                            id="table_check_row_1"
+                                                                                            class="custom-control-input"><label
+                                                                                            class="custom-control-label"
+                                                                                            for="table_check_row_1"></label>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>N6K_35</td>
+                                                                                <td>10.127.117.35</td>
+                                                                                <td>LAN</td>
+                                                                                <td>Cisca Nexufwefw</td>
+                                                                                <td>7.1(0)N1(1)</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <div
+                                                                                        class="custom-checkbox custom-control">
+                                                                                        <input type="checkbox"
+                                                                                            id="table_check_row_2"
+                                                                                            class="custom-control-input"><label
+                                                                                            class="custom-control-label"
+                                                                                            for="table_check_row_2"></label>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>N6K_35</td>
+                                                                                <td>10.127.117.35</td>
+                                                                                <td>LAN</td>
+                                                                                <td>Cisca Nexufwefw</td>
+                                                                                <td>7.1(0)N1(1)</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <div
+                                                                                        class="custom-checkbox custom-control">
+                                                                                        <input type="checkbox"
+                                                                                            id="table_check_row_3"
+                                                                                            class="custom-control-input"><label
+                                                                                            class="custom-control-label"
+                                                                                            for="table_check_row_3"></label>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>N6K_35</td>
+                                                                                <td>10.127.117.35</td>
+                                                                                <td>LAN</td>
+                                                                                <td>Cisca Nexufwefw</td>
+                                                                                <td>7.1(0)N1(1)</td>
+                                                                            </tr>
+
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-12 col-md-12 col-lg-1 mb-3 col-xl-1 d-flex flex-row flex-lg-column justify-content-around align-items-center">
+                                                                <div class="d-flex flex-row flex-lg-column">
+                                                                    <button class="btn btn_add_LeftGroup">
+
+                                                                    </button>
+                                                                    <button class="btn btn_add_Left">
+
+                                                                    </button>
+                                                                </div>
+                                                                <div class="d-flex flex-row flex-lg-column">
+                                                                    <button class="btn btn_add_RightGroup">
+                                                                    </button>
+                                                                    <button class="btn btn_add_Right">
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-md-12 col-lg-5 mb-3">
+                                                                <div class="table-responsive">
+                                                                    <table
+                                                                        class="table table-devices table-borderless table-striped">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>
+                                                                                    <div
+                                                                                        class="custom-checkbox custom-control">
+                                                                                        <input type="checkbox"
+                                                                                            id="table_checkall"
+                                                                                            class="custom-control-input"><label
+                                                                                            class="custom-control-label"
+                                                                                            for="table_checkall"></label>
+                                                                                    </div>
+                                                                                </th>
+                                                                                <th>Name</th>
+                                                                                <th>IP Address</th>
+                                                                                <th>Group</th>
+                                                                                <th>Platform</th>
+                                                                                <th>Version</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <div
+                                                                                        class="custom-checkbox custom-control">
+                                                                                        <input type="checkbox"
+                                                                                            id="table_check_row_1"
+                                                                                            class="custom-control-input"><label
+                                                                                            class="custom-control-label"
+                                                                                            for="table_check_row_1"></label>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>N6K_35</td>
+                                                                                <td>10.127.117.35</td>
+                                                                                <td>LAN</td>
+                                                                                <td>Cisca Nexufwefw</td>
+                                                                                <td>7.1(0)N1(1)</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <div
+                                                                                        class="custom-checkbox custom-control">
+                                                                                        <input type="checkbox"
+                                                                                            id="table_check_row_2"
+                                                                                            class="custom-control-input"><label
+                                                                                            class="custom-control-label"
+                                                                                            for="table_check_row_2"></label>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>N6K_35</td>
+                                                                                <td>10.127.117.35</td>
+                                                                                <td>LAN</td>
+                                                                                <td>Cisca Nexufwefw</td>
+                                                                                <td>7.1(0)N1(1)</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <div
+                                                                                        class="custom-checkbox custom-control">
+                                                                                        <input type="checkbox"
+                                                                                            id="table_check_row_3"
+                                                                                            class="custom-control-input"><label
+                                                                                            class="custom-control-label"
+                                                                                            for="table_check_row_3"></label>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>N6K_35</td>
+                                                                                <td>10.127.117.35</td>
+                                                                                <td>LAN</td>
+                                                                                <td>Cisca Nexufwefw</td>
+                                                                                <td>7.1(0)N1(1)</td>
+                                                                            </tr>
+
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div id="step-3">
+                                        <div class="card card-infra bg-f3f3f3">
 
+                                            <div class="card-body pt-4 pb-5">
+                                                <p class="txtDefineVariable">Define Variable</p>
+                                                <div class="card card-infra">
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <p class="title-section-form">Genaral</p>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <div class="position-relative row form-group">
+                                                                    <label for="ip_vlan"
+                                                                        class="col-12 col-md-4 col-lg-3 col-form-label text-left text-md-right"><span>*</span>VLAN_RANGE
+                                                                    </label>
+                                                                    <div class="col-12 col-md-8 col-lg-4">
+                                                                        <input name="ip_vlan" id="ip_vlan"
+                                                                            class="form-control">
+                                                                    </div>
+                                                                    <div
+                                                                        class="col-12 col-md-12 col-lg-5 d-flex align-items-center">
+                                                                        <div class="row justify-content-end">
+                                                                            <div class="col-12 col-md-8 col-lg-12">
+                                                                                <p class="clarify-ip">Range of vlans for
+                                                                                    mode to be set to fabricpath</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <div class="position-relative row form-group">
+                                                                    <label for="ip_FP_INTERFACE_RANGE"
+                                                                        class="col-12 col-md-4 col-lg-3 col-form-label text-left text-md-right"><span>*</span>FP_INTERFACE_RANGE
+                                                                    </label>
+                                                                    <div class="col-12 col-md-8 col-lg-4">
+                                                                        <input name="ip_FP_INTERFACE_RANGE"
+                                                                            id="ip_FP_INTERFACE_RANGE"
+                                                                            class="form-control">
+                                                                    </div>
+                                                                    <div
+                                                                        class="col-12 col-md-12 col-lg-5 d-flex align-items-center">
+                                                                        <div class="row justify-content-end">
+                                                                            <div class="col-12 col-md-8 col-lg-12">
+                                                                                <p class="clarify-ip">Use ‘,’ for
+                                                                                    discrete and ‘-’ for contiguous set
+                                                                                    of interfaces (i.e. eth1/1-2,
+                                                                                    eth3/4, eth5-6)</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div id="step-4">
-
+                                        <div class="card card-infra bg-f3f3f3">
+                                            <div class="card-body pt-4 pb-5">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="position-relative row form-group">
+                                                            <label for="ip_selectDeviceDeploy"
+                                                                class="col-12 col-md-3 col-lg-3 col-xl-2 col-form-label text-left">Select
+                                                                a Device
+                                                            </label>
+                                                            <div class="col-12 col-md-5 col-lg-5 col-xl-3">
+                                                                <select name="ip_selectDeviceDeploy"
+                                                                    id="ip_selectDeviceDeploy" class="form-control">
+                                                                    <option>N6004-36</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="card card-infra">
+                                                            <div class="card-body">
+                                                                <p class="title-section-form">Configuration to be
+                                                                    delivered:</p>
+                                                                <div class="px-3">
+                                                                    <code>
+                                                                        install feature-set fabricpat<br>
+                                                                        feature - set fabricpath<br>
+                                                                        <br>
+                                                                        logging level fabricpath isis 5<br>
+                                                                        logging level fabricpath switch - id 6<br>
+                                                                        fabricpath domain default<br>
+                                                                        <br>
+                                                                        vlan 1<br>
+                                                                        mode fabricapath<br>
+                                                                        exit<br>
+                                                                        <br>
+                                                                        interface eth1
+                                                                        <br>
+                                                                        switchport<br>
+                                                                        switchport mode fabricpath<br>
+                                                                        no shutdown<br>
+                                                                        exit
+                                                                    </code>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div id="step-5">
+                                        <div class="card card-infra bg-f3f3f3">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="form-inline mb-0">
+                                                            <div class="mb-2 position-relative form-group">
+                                                                <label for="ip_jobdescription"
+                                                                    class="mr-2 label_step5">Job
+                                                                    Description:</label>
+                                                                <input name="ip_jobdescription" id="ip_jobdescription"
+                                                                    placeholder="" type="text" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <p class="label_step5 mb-0 mt-2">Choose time to deliver :</p>
+                                                        <div class="position-relative form-group mb-0">
+                                                            <div>
+                                                                <div class="custom-radio custom-control mb-1">
+                                                                    <input type="radio" id="radioInstant"
+                                                                        name="radioDeliver"
+                                                                        class="custom-control-input">
+                                                                    <label class="custom-control-label"
+                                                                        for="radioInstant">Instant Job</label>
+                                                                </div>
+                                                                <div class="form-inline mb-1">
+                                                                    <div class="custom-radio custom-control">
+                                                                        <input type="radio" id="radioSchedule"
+                                                                            name="radioDeliver"
+                                                                            class="custom-control-input">
+                                                                        <label class="custom-control-label"
+                                                                            for="radioSchedule">Schedule Job</label>
+                                                                    </div>
+                                                                    <input class="form-control mx-1" type="date">
+                                                                    <input class="form-control mx-1" type="time">
+                                                                </div>
 
+                                                            </div>
+                                                        </div>
+                                                        <div class="position-relative form-group mb-0">
+                                                            <div>
+                                                                <div class="custom-checkbox custom-control mb-1">
+                                                                    <input type="checkbox" id="copyRuntoStart"
+                                                                        class="custom-control-input">
+                                                                    <label class="custom-control-label"
+                                                                        for="copyRuntoStart">Copy Run to Start</label>
+                                                                </div>
+                                                                <div class="custom-checkbox custom-control mb-1">
+                                                                    <input type="checkbox" id="showMoreOption"
+                                                                        class="custom-control-input">
+                                                                    <label class="custom-control-label"
+                                                                        for="showMoreOption">Show more options</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <p class="label_step5 mb-0 mt-2">Transaction Options (Optional)
+                                                            :</p>
+
+                                                        <div class="position-relative form-group mb-0">
+                                                            <div>
+                                                                <div class="custom-checkbox custom-control mb-1">
+                                                                    <input type="checkbox" id="enableRollback"
+                                                                        class="custom-control-input">
+                                                                    <label class="custom-control-label"
+                                                                        for="enableRollback">Enable Rollback (Only for
+                                                                        devices with rollback feature support)</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="position-relative form-group mb-0">
+                                                            <div>
+                                                                <div class="custom-radio custom-control mb-1">
+                                                                    <input type="radio" id="radioRollback1"
+                                                                        name="radioRollback"
+                                                                        class="custom-control-input">
+                                                                    <label class="custom-control-label"
+                                                                        for="radioRollback1">Rollback the configuration
+                                                                        on a device if there is any failure on that
+                                                                        device</label>
+                                                                </div>
+                                                                <div class="custom-radio custom-control mb-1">
+                                                                    <input type="radio" id="radioRollback2"
+                                                                        name="radioRollback"
+                                                                        class="custom-control-input">
+                                                                    <label class="custom-control-label"
+                                                                        for="radioRollback2">Rollback the configuration
+                                                                        on all the devices if there is any failure on
+                                                                        that device</label>
+                                                                </div>
+                                                                <div class="custom-radio custom-control mb-1">
+                                                                    <input type="radio" id="radioRollback3"
+                                                                        name="radioRollback"
+                                                                        class="custom-control-input">
+                                                                    <label class="custom-control-label"
+                                                                        for="radioRollback3">Rollback the configuration
+                                                                        on a devices if there is any failure on any
+                                                                        device and stop futhur configuration delivery to
+                                                                        remaining devices</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <p class="label_step5 mb-0 mt-2">Delivery Options (Optional)</p>
+                                                        <div class="form-inline mb-0">
+                                                            <div class="mb-2 position-relative form-group">
+                                                                <label for="ip_CmdResponse" class="mr-2 label_step5">Cmd
+                                                                    Response Timeout (1-180) :</label>
+                                                                <input name="ip_CmdResponse" id="ip_CmdResponse"
+                                                                    placeholder="" type="text" class="form-control">
+                                                                <span class="label_step5">seconds</span>
+                                                            </div>
+                                                        </div>
+                                                        <p class="label_step5 mb-0 mt-2">Deliver Order </p>
+                                                        <div class="position-relative form-group mb-0">
+                                                            <div>
+                                                                <div class="custom-radio custom-control mb-1">
+                                                                    <input type="radio" id="radioDeliverOrder1"
+                                                                        name="radioDeliverOrder"
+                                                                        class="custom-control-input">
+                                                                    <label class="custom-control-label"
+                                                                        for="radioDeliverOrder1">Deliver configuration
+                                                                        one device at a time in sequential</label>
+                                                                </div>
+                                                                <div class="custom-radio custom-control mb-1">
+                                                                    <input type="radio" id="radioDeliverOrder2"
+                                                                        name="radioDeliverOrder"
+                                                                        class="custom-control-input">
+                                                                    <label class="custom-control-label"
+                                                                        for="radioDeliverOrder2">Deliver configuration
+                                                                        in parallel to all devices at the same
+                                                                        time</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="divider"></div>
                             <div class="clearfix">
                                 <button type="button" id="prev-btn"
-                                    class="btn-shadow float-left btn-wide btn-pill mr-3 btn btn-outline-secondary">Previous</button>
+                                    class="btn-shadow float-left btn-wide btn-pill mr-3 btn btn_previous_step">Previous</button>
                                 <button type="button" id="next-btn"
-                                    class="btn-shadow btn-wide float-left btn-pill btn-hover-shine btn btn-primary">Next</button>
+                                    class="btn-shadow btn-wide float-left btn-pill btn-hover-shine btn btn_next_step">Next</button>
+                                <button type="button"
+                                    class="btn-shadow btn-wide float-right btn-pill btn-hover-shine btn btn_cancel">Cancel</button>
                             </div>
                         </div>
 
